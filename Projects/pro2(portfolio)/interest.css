@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00fff7;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    background-color: #333333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #00fff7;
+    color: #0f0f0f;
+    box-shadow: 0 0 15px #00fff7;
+    transform: translateY(-5px);
+}
+
+#interest {
+    padding: 4rem 2rem;
+    background-color: #1a1a1a;
+    color: #cccccc;
+    text-align: center;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+#interest h2 {
+    font-size: 2.5rem;
+    color: #00fff7;
+    margin-bottom: 2rem;
+}
+
+.interest-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.interest-item.left .interest-card {
+    order: 1;
+}
+
+.interest-item.right .interest-card {
+    order: 2;
+}
+
+.interest-card {
+    background: linear-gradient(135deg, #1c1c1c, #292929);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+    color: #e0e0e0;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card h3 {
+    font-size: 1.8rem;
+    color: #00fff7;
+    margin-bottom: 1rem;
+}
+
+.interest-card p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.interest-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00fff7, 0 0 30px rgba(0, 255, 247, 0.3);
+    background: linear-gradient(135deg, #222, #333);
+}
+
+.interest-text {
+    flex: 2;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 12px;
+    color: #cccccc;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.interest-text:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00fff7, 0 0 30px rgba(0, 255, 247, 0.3);
+    background: linear-gradient(135deg, #222, #333);
+}
+
+@media (max-width: 768px) {
+    .interest-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest-card, .interest-text {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
